@@ -1,0 +1,126 @@
+Active Status	Type	Item	Description	Sales Tax Code	Account	COGS Account	Price
+Active	Service	3V	3V Battery	Tax	Services Income		4
+Active	Service	9V	9 Volt Battery	Tax	Services Income		6.5
+Active	Service	BD	CHARGED OFF	Tax	Bad Debts		-100%
+Active	Service	BFT	Backflow Testing	Tax	Service Income		150
+Active	Service	CANCELLED	Customer Cancelled	Non	Bad Debts		0
+Active	Service	Credit	Referral	Non	60000 · Advertising and Promotion		20
+Active	Service	CTR	Controller	Tax	47900 · Sales		0
+Active	Service	CTRL	Controller	Tax	Services Income		150
+Active	Service	DCA	Double Check Assembly	Non	47900 · Sales		1100
+Active	Service	DCA-007	3/4' DOUBLE CHECK ASSEMBLY	Tax	Services Income		1100
+Active	Service	DCA-010	1' DOUBLE CHECK ASSEMBLY	Tax	Services Income		1100
+Active	Service	DL	Drip Leak	Tax	Services Income		25
+Active	Service	drip system		Tax	Services Income		0
+Active	Service	DSN	System Design	Tax	Services		200
+Active	Service	ESPM3	RAINBIRD ESP 3 STATION MODULE	Tax	Services Income		50
+Active	Service	Fuel Charge		Tax	Services		25
+Active	Service	HEAD	Replace Spray Head..	Tax	Service Income		25
+Active	Service	HEAD:cap	Cap Head/Riser	Tax	Service Income		25
+Active	Service	HEAD/12" Spray	12" Spray Head	Tax	Services Income		40
+Active	Service	HEAD/6' Spray	6" Spray Head	Tax	Services Income		35
+Active	Service	HEAD/cap	Cap Head/Riser	Tax	Services Income		25
+Active	Service	HEAD/L	Lower Spray Head	Tax	Services Income		25
+Active	Service	HEAD/Lower	Lower Pipe	Tax	Services Income		25
+Active	Service	HEAD/M	MOVE SPRAY HEAD	Tax	Services Income		75
+Active	Service	HEAD/MH	Move Head	Tax	Services Income		75
+Active	Service	HEAD/nrp	Add new spray head	Tax	Services Income		75
+Active	Service	HEAD/R	RAISE SPRAY HEAD	Tax	Services Income		20
+Active	Service	HEAD/riser	Add Riser	Tax	Services Income		25
+Active	Service	HEAD/RR	Raise Riser	Tax	Services Income		20
+Active	Service	HEAD/RSH	REPLACE SPRAY HEAD	Tax	Services Income		25
+Active	Service	HEAD/SRT	STRAIGHTEN ROTER	Tax	Services Income		30
+Active	Service	HEAD/STS	STRAIGHTEN SPRAY HEAD	Tax	Services Income		20
+Active	Service	Installation of New System		Non	47900 · Sales		0
+Active	Service	Labor	Hourly  Labor	Non	Services Income		125
+Active	Service	Labor/Wi	(WIRING) $125 PER HOUR	Non	Services Income		125
+Active	Service	LC	Late Charge	Tax	Fees		35
+Active	Service	LL	Lateral Leak	Tax	Services Income		225
+Active	Service	Loc	Valve Locater	Tax	Services Income		95
+Active	Service	Master Valve	Add Master Valve.	Tax	Services		1200
+Active	Service	MATERIAL	MATERIAL	Tax	Services Income		0
+Active	Service	ML	Main Line Leak	Tax	Services Income		265
+Active	Service	Nozzle	Replace Spray Nozzle	Tax	Services Income		10
+Active	Service	NSF	NSF FEE	Tax	66700 · Professional Fees		25
+Active	Service	P/A	Priority/After Hour	Tax	Service Income		225
+Active	Service	peb 150	rainbird peb valve 1 1/2'	Tax	47900 · Sales		129
+Active	Service	peb100	rainbird 1' peb valve	Tax	47900 · Sales		97
+Active	Service	Permit	City of Dallas Permit Fees	Tax	Fees		350
+Active	Service	PGP	Hunter PGP	Tax	Services Income		55
+Active	Service	Pressure Reducer	Pressure Reducer.	Tax	Services		1750
+Active	Service	Priority	Priority Call	Tax	Service Income		225
+Active	Service	Promo	$20 Off Promo	Tax	60000 · Advertising and Promotion		-20
+Active	Service	PVB	FEBCO 1' POPETT / BONETT ASSEMBLY	Tax	Services Income		95
+Active	Service	R5H	RAINBIRD 5' HALF FLAT NOZZLE	Tax	47900 · Sales	Cost of Goods-Materials	1
+Active	Service	Rachio-	Rachio WI-FI install	Tax	Services Income		150
+Active	Service	Rachio-16	Rachio 16 zone 2nd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# VR*******	Tax	Services Income		265
+Active	Service	Rachio-16-3rd	Rachio 16 zone 3rd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# *******	Tax	Services Income		325
+Active	Service	Rachio-8	Rachio 8 zone 2nd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# VR165****	Tax	Services Income		225
+Active	Service	Rachio-8- 3rd	Rachio 8 zone 3rd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# ****	Tax	Services Income		265
+Active	Service	Rachio-FI	Rachio Wireless Flow Meter Install	Tax	Services Income		225
+Active	Service	Rachio FM	Rachio Flow Meter	Tax	Services Income		125
+Active	Service	Rachio Install 3rd	Rachio WI-FI install 3rd Generation	Tax	Services Income		200
+Active	Service	rb12h	Rainbird 12' Half Flat Nozzle	Tax	47900 · Sales	Cost of Goods-Materials	6.5
+Active	Service	rb6	Rainbird 6 station timer	Tax	47900 · Sales		100
+Active	Service	rbpop	Rain bird pop-up	Tax	47900 · Sales	Cost of Goods-Materials	22.5
+Active	Service	RBS	Rainbird soil moisture sensor	Tax	47900 · Sales		220
+Active	Service	rbsp12	rainbird1812 sam prs 12' pop up	Tax	47900 · Sales		16.85
+Active	Service	RD600INT	IRRITROL 6 STATION RAIN DIAL INDOOR	Tax	47900 · Sales		149
+Active	Service	Ref	$20 Customer referral	Tax	60000 · Advertising and Promotion		-20
+Active	Service	RFS-O	Orbit Wireless Rain Freeze Sensor (Model orbit # 57071)	Tax	Services Income		195
+Active	Service	rfsensor	(RFS1000) IRRITROL WIRELESS RAIN & FREEZE SENSOR	Tax	Services Income		165
+Active	Service	Rotor	Hunter Rotor	Tax	Services Income		55
+Active	Service	Rotor:Raise	Raise Rotor	Tax	Service Income		40
+Active	Service	Rotor/Move	Move Rotor	Tax	Services		65
+Active	Service	Rotor; Move	Relocate Rotor.	Tax	Services		8.25
+Not-active	Service	rotor2	Hunter Rotor	Tax	Cost of Goods-Materials		55
+Active	Service	rrbsp4	Sam prs 1804 4' pop up	Tax	47900 · Sales		9.25
+Active	Service	Service		Tax	Services Income		0
+Active	Service	Shrub Adapter	Rain bird Shrub Adapter	Tax	Services Income		7
+Active	Service	Solenoid	Valve Solenoid	Tax	Services Income		65
+Active	Service	STP900i	Rainbird 9 Station Timer	Tax	47900 · Sales		185
+Active	Service	System Check	System Check	Tax	Services Income		95
+Active	Service	TB	Tree Bubbler	Tax	Services Income		20
+Active	Service	Trip Charge		Non	Services Income	66000 · Payroll Expenses	65
+Active	Service	Valve 2400S	Replace 1'  Electric Valve In-Line Strip	Tax	Services Income		330
+Not-active	Service	VALVE 2400T	1' Electric Valve In-Line Threaded	Tax	47900 · Sales		39.92
+Active	Service	VB	Round Valve Box	Tax	Services Income		15
+Active	Service	w	Covered under warranty	Tax	80000 · Ask My Accountant		0
+Active	Service	war	Covered under warranty	Tax	80000 · Ask My Accountant		-100%
+Active	Service	winterize	Winterize System (10% off inspection)	Tax	Services Income		65
+Active	Service	wire	(WIRING) $225 PER HOUR	Tax	Service Income		225
+Active	Service	WRITE OFF	NON PAYMENT WRITE OFF	Tax	Bad Debts		-100%
+Active	Service	Z1	(ZONE 1)	Tax	Services		0
+Active	Service	Z2	(ZONE 2)	Tax	Services		0
+Active	Service	Z3	(ZONE 3)	Tax	Services		0
+Active	Service	Z4	(ZONE 4)	Tax	Services		0
+Active	Service	Z5	(ZONE 5)	Tax	Services		0
+Active	Service	Z6	(ZONE 6)	Tax	Services		0
+Active	Service	Z7	(ZONE 7)	Tax	Services		0
+Active	Service	Z8	(ZONE 8)	Tax	Services		0
+Active	Service	Z9	(ZONE 9)	Tax	Services		0
+Active	Service	Z10	(ZONE 10)	Tax	Services		0
+Active	Service	Z11	(ZONE 11)	Tax	Services		0
+Active	Service	Z12	(ZONE 12)	Tax	Services		0
+Active	Service	Z13	(ZONE 13)	Tax	Services		0
+Active	Service	Z14	(ZONE 14)	Non	Services		0
+Active	Service	Z15	(ZONE 15)	Non	Services		0
+Active	Service	Z16	(ZONE 16 )	Non	Services		0
+Active	Service	Z17	(ZONE 17)	Non	Services		0
+Active	Service	Z18	(ZONE 18)	Non	Services		0
+Active	Service	Z19	(ZONE 19)	Non	Services		0
+Active	Service	Z20	(ZONE 20)	Non	Services		0
+Active	Service	Z21	(ZONE 21)	Non	Services		0
+Active	Service	Z22	(ZONE 22)	Non	Services		0
+Active	Service	Z23	(ZONE 23)	Non	Services		0
+Active	Service	Z24	(ZONE 24)	Non	Services		0
+Active	Service	ZA	3V Battery	Tax	Material		3.5
+Active	Service	zzz	Orbit Wireless Rain Freeze Sensor (Model orbit # 57071)	Tax	47900 · Sales	Cost of Goods-Materials	195
+Active	Non-inventory Part	MP360-2	360 ARC 13' to 21'	Tax	Service Income		16.5
+Active	Non-inventory Part	MP9-2	90-210 ARC 13' to 21'	Tax	Service Income		16.5
+Active	Non-inventory Part	MPLC-2	Left Corner ARC 13' to 21'	Tax	Service Income		16.5
+Active	Non-inventory Part	MPSS-2	Side Strip 5'x30' ARC 13' to 21'	Tax	Service Income		16.5
+Active	Non-inventory Part	RPZ	Febco 860 1"  Backflow Preventer	Tax	50000 · Cost of Goods Sold		400
+Active	Other Charge	30dl	30 days past due	Tax	Service Income		25
+Active	Other Charge	FSC	Fuel Surcharge	Tax	Services Income		25
+Active	Other Charge	Misc	Daily rent payment	Tax	Chase-LLC		0

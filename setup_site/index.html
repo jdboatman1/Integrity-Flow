@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAA Irrigation Service - Powered by Boatman Systems™</title>
+    <link rel="stylesheet" href="style.css?v=1.7">
+    <link href="//fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* The Boatman Standard Header: Stretched across the top */
+        body { 
+            margin: 0; 
+            padding: 0; 
+        }
+        .main-header {
+            width: 100% !important;
+            height: auto !important; /* Let it come down naturally */
+            margin: 0 !important;
+            padding: 0 !important;
+            display: block !important;
+            position: relative !important; /* Not fixed, so it doesn't cover hero */
+            z-index: 9999 !important;
+            background: white !important;
+        }
+        #boatman-main-logo {
+            width: 100% !important;
+            height: auto !important; /* Proportional height */
+            object-fit: fill !important; /* Stretched horizontally as per blueprint */
+            display: block !important;
+        }
+        .header-nav {
+            position: absolute !important;
+            bottom: 20px !important;
+            right: 40px !important;
+            z-index: 10000 !important;
+        }
+        .portal-login-btn {
+            background: #1b7abf !important;
+            color: white !important;
+            padding: 12px 25px !important;
+            border-radius: 5px !important;
+            text-decoration: none !important;
+            font-weight: bold !important;
+            font-size: 18px !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <img src="header_new.png?v=2" id="boatman-main-logo" alt="AAA Irrigation Service Logo">
+        <nav class="header-nav">
+            <a href="https://portal.aaairrigationservice.com" class="portal-login-btn">Customer Portal</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="glass-card">
+                <h1>The Boatman Systems™ Standard</h1>
+                <p>Advanced Irrigation Management & Commercial Field Service Solutions.</p>
+                <div class="cta-group">
+                    <a href="#residential" class="cta-primary">Residential Repair</a>
+                    <a href="#commercial" class="cta-secondary">Commercial Management</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="residential" class="service-silo">
+            <div class="container">
+                <h2 class="section-title">Residential Repair</h2>
+                <div class="grid">
+                    <div class="feature-card">
+                        <h3>Artificial Rain™ QA</h3>
+                        <p>Our proprietary quality assurance program ensuring 100% coverage and zero waste.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Smart Scheduling</h3>
+                        <p>Book your service online and receive 30-minute arrival alerts via SMS.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Licensed Expertise</h3>
+                        <p>Every technician is TCEQ Licensed, ensuring compliance and system longevity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="commercial" class="service-silo dark">
+            <div class="container">
+                <h2 class="section-title">Commercial Management</h2>
+                <div class="grid">
+                    <div class="feature-card">
+                        <h3>Multi-Site Portals</h3>
+                        <p>Manage multiple properties from a single "Powered by Boatman Systems™" dashboard.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Backflow Compliance</h3>
+                        <p>Automated tracking and reporting for municipal backflow certification requirements.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Parent/Child Billing</h3>
+                        <p>Sophisticated billing workflows designed for Property Managers and Sub-contractors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-highlights">
+            <div class="container">
+                <h2 class="section-title">Service Highlights</h2>
+                <div class="photo-gallery">
+                    <div class="photo-card">
+                        <img src="Broken Head.jpg" alt="Broken Head Repair">
+                        <div class="photo-label">Expert Diagnostics</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="Backflow RPZ.jpg" alt="Backflow RPZ Installation">
+                        <div class="photo-label">Backflow Compliance</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="sprinkler-system.jpg" alt="Sprinkler System Installation">
+                        <div class="photo-label">Commercial Installs</div>
+                    </div>
+                    <div class="photo-card">
+                        <img src="irrigation-rotors.jpg" alt="Irrigation Rotors Maintenance">
+                        <div class="photo-label">Elite Maintenance</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2 class="section-title" style="text-align: left;">Get an Estimate</h2>
+                        <p>Experience the <strong>Artificial Rain™</strong> quality standard. Our team will respond within 24 hours to schedule your on-site assessment.</p>
+                        <div class="contact-meta">
+                            <p><strong>Phone:</strong> 469-751-3567</p>
+                            <p><strong>Email:</strong> info@aaairrigationservice.com</p>
+                            <p><strong>Service Area:</strong> Plano, TX & surrounding areas</p>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="lead-form" class="glass-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="full_name">Full Name</label>
+                                    <input type="text" id="full_name" name="full_name" required placeholder="John Smith">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="(214) 123-4567">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="service_type">Service Needed</label>
+                                    <select id="service_type" name="service_type">
+                                        <option value="Residential Repair">Residential Repair</option>
+                                        <option value="Commercial Management">Commercial Management</option>
+                                        <option value="Backflow Testing">Backflow Testing</option>
+                                        <option value="New Installation">New Installation</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="referral">How did you hear about us?</label>
+                                    <select id="referral" name="referral">
+                                        <option value="Google">Google</option>
+                                        <option value="Facebook">Facebook</option>
+                                        <option value="Website">Website</option>
+                                        <option value="Truck">Truck / Signage</option>
+                                        <option value="City of Plano">City of Plano</option>
+                                        <option value="Yelp">Yelp</option>
+                                        <option value="Nextdoor">Nextdoor</option>
+                                        <option value="Customer Referral">Customer Referral</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Issue Description</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Describe your irrigation issue (e.g., 3 zones not turning on)"></textarea>
+                            </div>
+                            <button type="submit" class="cta-primary full-width">Send Request</button>
+                        </form>
+                        <div id="form-success" class="success-msg" style="display: none;">
+                            <h3>Request Received!</h3>
+                            <p>A specialist will call you shortly to confirm your appointment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sub-contracting">
+            <div class="container">
+                <div class="workflow-box">
+                    <h2>Sub-Contractor Workflows</h2>
+                    <p>Designed for elite partners like <strong>The Wilkins Group</strong>.</p>
+                    <ul class="workflow-list">
+                        <li><strong>Price Masking:</strong> Homeowners see work verification only; financial data is parent-only.</li>
+                        <li><strong>Net 30 Automation:</strong> Electronic invoicing and Net 30 terms synced with Integrity Flow Powered by Boatman Systems™.</li>
+                        <li><strong>E-Sign Estimates:</strong> Digital approval workflow for high-volume site management.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Boatman AI Bot -->
+    <div id="boatman-bot-container" class="bot-container">
+        <div id="bot-chat-window" class="bot-window" style="display: none;">
+            <div class="bot-header">
+                <div class="bot-status"></div>
+                <h3>Boatman AI™</h3>
+                <button id="close-bot" class="bot-close">&times;</button>
+            </div>
+            <div id="bot-messages" class="bot-messages">
+                <div class="message ai">
+                    <p>Hello! I'm the <strong>Boatman AI™</strong> assistant for AAA Irrigation Service. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="bot-input-area">
+                <input type="text" id="bot-input-field" placeholder="Ask about your controller or schedule...">
+                <button id="send-bot-msg" class="bot-send-btn">Send</button>
+            </div>
+            <div class="bot-footer">
+                <p>Powered by <em>Boatman AI™</em></p>
+            </div>
+        </div>
+        <button id="open-bot" class="bot-trigger">
+            <span class="bot-icon">🤖</span>
+            <span class="bot-label">Boatman AI™</span>
+        </button>
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 AAA Irrigation Service LLC. All Rights Reserved. Powered by Boatman Systems™.</p>
+    </footer>
+
+    <script>
+        // --- Lead Form Logic ---
+        document.getElementById('lead-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            const payload = {
+                full_name:    document.getElementById('full_name').value,
+                phone:        document.getElementById('phone').value,
+                email:        document.getElementById('email').value,
+                service_type: document.getElementById('service_type').value,
+                referral:     document.getElementById('referral').value,
+                message:      document.getElementById('message').value,
+            };
+            try {
+                const resp = await fetch('https://setup.aaairrigationservice.com/api/lead', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                });
+                const data = await resp.json();
+                if (data.success) {
+                    this.style.display = 'none';
+                    document.getElementById('form-success').style.display = 'block';
+                    document.getElementById('form-success').scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    btn.textContent = 'Send Request'; btn.disabled = false;
+                    alert('Something went wrong. Please call us at 469-751-3567.');
+                }
+            } catch (err) {
+                btn.textContent = 'Send Request'; btn.disabled = false;
+                alert('Connection error. Please call us at 469-751-3567.');
+            }
+        });
+
+        // --- Boatman AI Chat Logic ---
+        const openBot = document.getElementById('open-bot');
+        const closeBot = document.getElementById('close-bot');
+        const botWindow = document.getElementById('bot-chat-window');
+        const botMessages = document.getElementById('bot-messages');
+        const botInput = document.getElementById('bot-input-field');
+        const sendBotBtn = document.getElementById('send-bot-msg');
+
+        openBot.addEventListener('click', () => {
+            botWindow.style.display = 'flex';
+            openBot.style.display = 'none';
+        });
+
+        closeBot.addEventListener('click', () => {
+            botWindow.style.display = 'none';
+            openBot.style.display = 'flex';
+        });
+
+        const appendMsg = (text, type) => {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = `message ${type}`;
+            msgDiv.innerHTML = `<p>${text}</p>`;
+            botMessages.appendChild(msgDiv);
+            botMessages.scrollTop = botMessages.scrollHeight;
+        };
+
+        const handleBotChat = async () => {
+            const query = botInput.value.trim();
+            if (!query) return;
+
+            appendMsg(query, 'user');
+            botInput.value = '';
+
+            // Loading state
+            appendMsg("Boatman AI™ is thinking...", "ai");
+            const loading = botMessages.lastElementChild;
+
+            try {
+                const response = await fetch('/api/ai/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: query })
+                });
+
+                const data = await response.json();
+                loading.remove();
+                appendMsg(data.response, 'ai');
+            } catch (error) {
+                loading.remove();
+                appendMsg("I'm having trouble connecting to my cognitive systems. Please contact us directly at 469-751-3567 for immediate assistance.", 'ai');
+            }
+        };
+
+        sendBotBtn.addEventListener('click', handleBotChat);
+        botInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') handleBotChat();
+        });
+    </script>
+</body>
+</html>

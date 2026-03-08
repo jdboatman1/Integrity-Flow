@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh -i ~/.ssh/id_gemini_cli deploy@100.106.12.60 \"sudo docker exec frappe_docker-backend-1 bench --site erp.aaairrigationservice.com import-doc --help\")",
+      "Bash(ssh -i ~/.ssh/id_gemini_cli deploy@100.106.12.60 \"sudo docker exec frappe_docker-backend-1 bench --help\" 2>&1 | grep -i -E \"import|csv|data\")",
+      "Bash(ssh -i ~/.ssh/id_gemini_cli deploy@100.106.12.60 \"sudo docker exec frappe_docker-backend-1 bench --site erp.aaairrigationservice.com data-import --help\" 2>&1)",
+      "Bash(ssh -i ~/.ssh/id_gemini_cli deploy@100.106.12.60 \"sudo docker exec frappe_docker-backend-1 bench --site erp.aaairrigationservice.com export-csv Item /home/frappe/frappe-bench/sites/item_template.csv && sudo docker exec frappe_docker-backend-1 head -5 /home/frappe/frappe-bench/sites/item_template.csv\" 2>&1)",
+      "Bash(ssh -i ~/.ssh/id_gemini_cli deploy@100.106.12.60 \"sudo docker exec frappe_docker-backend-1 cat /home/frappe/frappe-bench/sites/item_template.csv\" 2>&1 | head -30)",
+      "Bash(ssh -i ~/.ssh/id_gemini_cli deploy@100.106.12.60 \"sudo docker exec frappe_docker-backend-1 bench --site erp.aaairrigationservice.com execute frappe.client.get_list --kwargs '{\\\\\"doctype\\\\\": \\\\\"UOM\\\\\", \\\\\"fields\\\\\": [\\\\\"name\\\\\"], \\\\\"limit_page_length\\\\\": 30}'\" 2>&1)",
+      "Bash(ssh -i ~/.ssh/id_gemini_cli deploy@100.106.12.60 \"sudo docker exec frappe_docker-backend-1 bench --site erp.aaairrigationservice.com execute frappe.client.get_list --kwargs '{\\\\\"doctype\\\\\": \\\\\"UOM\\\\\", \\\\\"fields\\\\\": [\\\\\"name\\\\\"], \\\\\"filters\\\\\": [[\\\\\"name\\\\\", \\\\\"in\\\\\", [\\\\\"Nos\\\\\", \\\\\"Unit\\\\\", \\\\\"Hour\\\\\", \\\\\"Minute\\\\\", \\\\\"Set\\\\\", \\\\\"Pair\\\\\", \\\\\"Each\\\\\"]]}'\" 2>&1)",
+      "Bash(ssh -i ~/.ssh/id_gemini_cli deploy@100.106.12.60 \"sudo docker exec frappe_docker-backend-1 bench --site erp.aaairrigationservice.com execute frappe.client.get_list --kwargs '{\\\\\"doctype\\\\\": \\\\\"UOM\\\\\", \\\\\"fields\\\\\": [\\\\\"name\\\\\"], \\\\\"limit_page_length\\\\\": 200}'\" 2>&1 | python3 -c \"import sys,json; uoms=[u['name'] for u in json.load\\(sys.stdin\\)]; [print\\(u\\) for u in uoms if any\\(k in u.lower\\(\\) for k in ['nos','unit','hour','each','set','piece','serv']\\)]\")",
+      "Bash(python3 /home/john/boatman-systems/Boatman_Systems_CRM/imports/build_frappe_csv.py)"
+    ]
+  }
+}

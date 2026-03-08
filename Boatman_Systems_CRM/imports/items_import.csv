@@ -1,0 +1,126 @@
+item_code,item_name,item_group,description,standard_rate,is_stock_item,is_sales_item,is_purchase_item,disabled,is_taxable
+3V,3V Battery,Services,3V Battery,4.0,0,1,0,0,1
+9V,9 Volt Battery,Services,9 Volt Battery,6.5,0,1,0,0,1
+BD,CHARGED OFF,Services,CHARGED OFF,0.0,0,1,0,0,1
+BFT,Backflow Testing,Services,Backflow Testing,150.0,0,1,0,0,1
+CANCELLED,Customer Cancelled,Services,Customer Cancelled,0.0,0,1,0,0,0
+Credit,Referral,Services,Referral,20.0,0,1,0,0,0
+CTR,Controller,Services,Controller,0.0,0,1,0,0,1
+CTRL,Controller,Services,Controller,150.0,0,1,0,0,1
+DCA,Double Check Assembly,Services,Double Check Assembly,1100.0,0,1,0,0,0
+DCA-007,3/4' DOUBLE CHECK ASSEMBLY,Services,3/4' DOUBLE CHECK ASSEMBLY,1100.0,0,1,0,0,1
+DCA-010,1' DOUBLE CHECK ASSEMBLY,Services,1' DOUBLE CHECK ASSEMBLY,1100.0,0,1,0,0,1
+DL,Drip Leak,Services,Drip Leak,25.0,0,1,0,0,1
+drip system,drip system,Services,,0.0,0,1,0,0,1
+DSN,System Design,Services,System Design,200.0,0,1,0,0,1
+ESPM3,RAINBIRD ESP 3 STATION MODULE,Services,RAINBIRD ESP 3 STATION MODULE,50.0,0,1,0,0,1
+Fuel Charge,Fuel Charge,Services,,25.0,0,1,0,0,1
+HEAD,Replace Spray Head..,Services,Replace Spray Head..,25.0,0,1,0,0,1
+HEAD:cap,Cap Head/Riser,Services,Cap Head/Riser,25.0,0,1,0,0,1
+"HEAD/12"" Spray","12"" Spray Head",Services,"12"" Spray Head",40.0,0,1,0,0,1
+HEAD/6' Spray,"6"" Spray Head",Services,"6"" Spray Head",35.0,0,1,0,0,1
+HEAD/cap,Cap Head/Riser,Services,Cap Head/Riser,25.0,0,1,0,0,1
+HEAD/L,Lower Spray Head,Services,Lower Spray Head,25.0,0,1,0,0,1
+HEAD/Lower,Lower Pipe,Services,Lower Pipe,25.0,0,1,0,0,1
+HEAD/M,MOVE SPRAY HEAD,Services,MOVE SPRAY HEAD,75.0,0,1,0,0,1
+HEAD/MH,Move Head,Services,Move Head,75.0,0,1,0,0,1
+HEAD/nrp,Add new spray head,Services,Add new spray head,75.0,0,1,0,0,1
+HEAD/R,RAISE SPRAY HEAD,Services,RAISE SPRAY HEAD,20.0,0,1,0,0,1
+HEAD/riser,Add Riser,Services,Add Riser,25.0,0,1,0,0,1
+HEAD/RR,Raise Riser,Services,Raise Riser,20.0,0,1,0,0,1
+HEAD/RSH,REPLACE SPRAY HEAD,Services,REPLACE SPRAY HEAD,25.0,0,1,0,0,1
+HEAD/SRT,STRAIGHTEN ROTER,Services,STRAIGHTEN ROTER,30.0,0,1,0,0,1
+HEAD/STS,STRAIGHTEN SPRAY HEAD,Services,STRAIGHTEN SPRAY HEAD,20.0,0,1,0,0,1
+Installation of New System,Installation of New System,Services,,0.0,0,1,0,0,0
+Labor,Hourly  Labor,Services,Hourly  Labor,125.0,0,1,0,0,0
+Labor/Wi,(WIRING) $125 PER HOUR,Services,(WIRING) $125 PER HOUR,125.0,0,1,0,0,0
+LC,Late Charge,Services,Late Charge,35.0,0,1,0,0,1
+LL,Lateral Leak,Services,Lateral Leak,225.0,0,1,0,0,1
+Loc,Valve Locater,Services,Valve Locater,95.0,0,1,0,0,1
+Master Valve,Add Master Valve.,Services,Add Master Valve.,1200.0,0,1,0,0,1
+MATERIAL,MATERIAL,Services,MATERIAL,0.0,0,1,0,0,1
+ML,Main Line Leak,Services,Main Line Leak,265.0,0,1,0,0,1
+Nozzle,Replace Spray Nozzle,Services,Replace Spray Nozzle,10.0,0,1,0,0,1
+NSF,NSF FEE,Services,NSF FEE,25.0,0,1,0,0,1
+P/A,Priority/After Hour,Services,Priority/After Hour,225.0,0,1,0,0,1
+peb 150,rainbird peb valve 1 1/2',Services,rainbird peb valve 1 1/2',129.0,0,1,0,0,1
+peb100,rainbird 1' peb valve,Services,rainbird 1' peb valve,97.0,0,1,0,0,1
+Permit,City of Dallas Permit Fees,Services,City of Dallas Permit Fees,350.0,0,1,0,0,1
+PGP,Hunter PGP,Services,Hunter PGP,55.0,0,1,0,0,1
+Pressure Reducer,Pressure Reducer.,Services,Pressure Reducer.,1750.0,0,1,0,0,1
+Priority,Priority Call,Services,Priority Call,225.0,0,1,0,0,1
+Promo,$20 Off Promo,Services,$20 Off Promo,0.0,0,1,0,0,1
+PVB,FEBCO 1' POPETT / BONETT ASSEMBLY,Services,FEBCO 1' POPETT / BONETT ASSEMBLY,95.0,0,1,0,0,1
+R5H,RAINBIRD 5' HALF FLAT NOZZLE,Services,RAINBIRD 5' HALF FLAT NOZZLE,1.0,0,1,0,0,1
+Rachio-,Rachio WI-FI install,Services,Rachio WI-FI install,150.0,0,1,0,0,1
+Rachio-16,Rachio 16 zone 2nd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# VR*******,Services,Rachio 16 zone 2nd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# VR*******,265.0,0,1,0,0,1
+Rachio-16-3rd,Rachio 16 zone 3rd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# *******,Services,Rachio 16 zone 3rd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# *******,325.0,0,1,0,0,1
+Rachio-8,Rachio 8 zone 2nd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# VR165****,Services,Rachio 8 zone 2nd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# VR165****,225.0,0,1,0,0,1
+Rachio-8- 3rd,Rachio 8 zone 3rd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# ****,Services,Rachio 8 zone 3rd Gen Controller (WI-FI)..4 Year Manufacturer Warranty..SERIAL# ****,265.0,0,1,0,0,1
+Rachio-FI,Rachio Wireless Flow Meter Install,Services,Rachio Wireless Flow Meter Install,225.0,0,1,0,0,1
+Rachio FM,Rachio Flow Meter,Services,Rachio Flow Meter,125.0,0,1,0,0,1
+Rachio Install 3rd,Rachio WI-FI install 3rd Generation,Services,Rachio WI-FI install 3rd Generation,200.0,0,1,0,0,1
+rb12h,Rainbird 12' Half Flat Nozzle,Services,Rainbird 12' Half Flat Nozzle,6.5,0,1,0,0,1
+rb6,Rainbird 6 station timer,Services,Rainbird 6 station timer,100.0,0,1,0,0,1
+rbpop,Rain bird pop-up,Services,Rain bird pop-up,22.5,0,1,0,0,1
+RBS,Rainbird soil moisture sensor,Services,Rainbird soil moisture sensor,220.0,0,1,0,0,1
+rbsp12,rainbird1812 sam prs 12' pop up,Services,rainbird1812 sam prs 12' pop up,16.85,0,1,0,0,1
+RD600INT,IRRITROL 6 STATION RAIN DIAL INDOOR,Services,IRRITROL 6 STATION RAIN DIAL INDOOR,149.0,0,1,0,0,1
+Ref,$20 Customer referral,Services,$20 Customer referral,0.0,0,1,0,0,1
+RFS-O,Orbit Wireless Rain Freeze Sensor (Model orbit # 57071),Services,Orbit Wireless Rain Freeze Sensor (Model orbit # 57071),195.0,0,1,0,0,1
+rfsensor,(RFS1000) IRRITROL WIRELESS RAIN & FREEZE SENSOR,Services,(RFS1000) IRRITROL WIRELESS RAIN & FREEZE SENSOR,165.0,0,1,0,0,1
+Rotor,Hunter Rotor,Services,Hunter Rotor,55.0,0,1,0,0,1
+Rotor:Raise,Raise Rotor,Services,Raise Rotor,40.0,0,1,0,0,1
+Rotor/Move,Move Rotor,Services,Move Rotor,65.0,0,1,0,0,1
+Rotor; Move,Relocate Rotor.,Services,Relocate Rotor.,8.25,0,1,0,0,1
+rotor2,Hunter Rotor,Services,Hunter Rotor,55.0,0,1,0,1,1
+rrbsp4,Sam prs 1804 4' pop up,Services,Sam prs 1804 4' pop up,9.25,0,1,0,0,1
+Service,Service,Services,,0.0,0,1,0,0,1
+Shrub Adapter,Rain bird Shrub Adapter,Services,Rain bird Shrub Adapter,7.0,0,1,0,0,1
+Solenoid,Valve Solenoid,Services,Valve Solenoid,65.0,0,1,0,0,1
+STP900i,Rainbird 9 Station Timer,Services,Rainbird 9 Station Timer,185.0,0,1,0,0,1
+System Check,System Check,Services,System Check,95.0,0,1,0,0,1
+TB,Tree Bubbler,Services,Tree Bubbler,20.0,0,1,0,0,1
+Trip Charge,Trip Charge,Services,,65.0,0,1,0,0,0
+Valve 2400S,Replace 1'  Electric Valve In-Line Strip,Services,Replace 1'  Electric Valve In-Line Strip,330.0,0,1,0,0,1
+VALVE 2400T,1' Electric Valve In-Line Threaded,Services,1' Electric Valve In-Line Threaded,39.92,0,1,0,1,1
+VB,Round Valve Box,Services,Round Valve Box,15.0,0,1,0,0,1
+w,Covered under warranty,Services,Covered under warranty,0.0,0,1,0,0,1
+war,Covered under warranty,Services,Covered under warranty,0.0,0,1,0,0,1
+winterize,Winterize System (10% off inspection),Services,Winterize System (10% off inspection),65.0,0,1,0,0,1
+wire,(WIRING) $225 PER HOUR,Services,(WIRING) $225 PER HOUR,225.0,0,1,0,0,1
+WRITE OFF,NON PAYMENT WRITE OFF,Services,NON PAYMENT WRITE OFF,0.0,0,1,0,0,1
+Z1,(ZONE 1),Services,(ZONE 1),0.0,0,1,0,0,1
+Z2,(ZONE 2),Services,(ZONE 2),0.0,0,1,0,0,1
+Z3,(ZONE 3),Services,(ZONE 3),0.0,0,1,0,0,1
+Z4,(ZONE 4),Services,(ZONE 4),0.0,0,1,0,0,1
+Z5,(ZONE 5),Services,(ZONE 5),0.0,0,1,0,0,1
+Z6,(ZONE 6),Services,(ZONE 6),0.0,0,1,0,0,1
+Z7,(ZONE 7),Services,(ZONE 7),0.0,0,1,0,0,1
+Z8,(ZONE 8),Services,(ZONE 8),0.0,0,1,0,0,1
+Z9,(ZONE 9),Services,(ZONE 9),0.0,0,1,0,0,1
+Z10,(ZONE 10),Services,(ZONE 10),0.0,0,1,0,0,1
+Z11,(ZONE 11),Services,(ZONE 11),0.0,0,1,0,0,1
+Z12,(ZONE 12),Services,(ZONE 12),0.0,0,1,0,0,1
+Z13,(ZONE 13),Services,(ZONE 13),0.0,0,1,0,0,1
+Z14,(ZONE 14),Services,(ZONE 14),0.0,0,1,0,0,0
+Z15,(ZONE 15),Services,(ZONE 15),0.0,0,1,0,0,0
+Z16,(ZONE 16 ),Services,(ZONE 16 ),0.0,0,1,0,0,0
+Z17,(ZONE 17),Services,(ZONE 17),0.0,0,1,0,0,0
+Z18,(ZONE 18),Services,(ZONE 18),0.0,0,1,0,0,0
+Z19,(ZONE 19),Services,(ZONE 19),0.0,0,1,0,0,0
+Z20,(ZONE 20),Services,(ZONE 20),0.0,0,1,0,0,0
+Z21,(ZONE 21),Services,(ZONE 21),0.0,0,1,0,0,0
+Z22,(ZONE 22),Services,(ZONE 22),0.0,0,1,0,0,0
+Z23,(ZONE 23),Services,(ZONE 23),0.0,0,1,0,0,0
+Z24,(ZONE 24),Services,(ZONE 24),0.0,0,1,0,0,0
+ZA,3V Battery,Services,3V Battery,3.5,0,1,0,0,1
+zzz,Orbit Wireless Rain Freeze Sensor (Model orbit # 57071),Services,Orbit Wireless Rain Freeze Sensor (Model orbit # 57071),195.0,0,1,0,0,1
+MP360-2,360 ARC 13' to 21',Products,360 ARC 13' to 21',16.5,0,1,0,0,1
+MP9-2,90-210 ARC 13' to 21',Products,90-210 ARC 13' to 21',16.5,0,1,0,0,1
+MPLC-2,Left Corner ARC 13' to 21',Products,Left Corner ARC 13' to 21',16.5,0,1,0,0,1
+MPSS-2,Side Strip 5'x30' ARC 13' to 21',Products,Side Strip 5'x30' ARC 13' to 21',16.5,0,1,0,0,1
+RPZ,"Febco 860 1""  Backflow Preventer",Products,"Febco 860 1""  Backflow Preventer",400.0,0,1,0,0,1
+30dl,30 days past due,Services,30 days past due,25.0,0,1,0,0,1
+FSC,Fuel Surcharge,Services,Fuel Surcharge,25.0,0,1,0,0,1
+Misc,Daily rent payment,Services,Daily rent payment,0.0,0,1,0,0,1

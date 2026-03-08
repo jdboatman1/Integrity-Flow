@@ -1,0 +1,15 @@
+[Unit]
+Description=Boatman AI Proxy - AAA Irrigation Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/boatman/ai_proxy.py
+Restart=always
+RestartSec=5
+User=www-data
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=boatman-ai-proxy
+
+[Install]
+WantedBy=multi-user.target

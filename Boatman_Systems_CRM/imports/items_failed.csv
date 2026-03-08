@@ -1,0 +1,6 @@
+item_code,item_name,item_group,description,standard_rate,is_stock_item,is_sales_item,is_purchase_item,disabled,is_taxable,source_price,failure_reason
+BD,CHARGED OFF,Services,CHARGED OFF,0.0,0,1,0,0,1,-100%,percentage price '-100%' → set to 0
+Promo,$20 Off Promo,Services,$20 Off Promo,0.0,0,1,0,0,1,-20,negative price '-20' → set to 0
+Ref,$20 Customer referral,Services,$20 Customer referral,0.0,0,1,0,0,1,-20,negative price '-20' → set to 0
+war,Covered under warranty,Services,Covered under warranty,0.0,0,1,0,0,1,-100%,percentage price '-100%' → set to 0
+WRITE OFF,NON PAYMENT WRITE OFF,Services,NON PAYMENT WRITE OFF,0.0,0,1,0,0,1,-100%,percentage price '-100%' → set to 0

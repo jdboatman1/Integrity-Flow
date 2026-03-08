@@ -1,0 +1,32 @@
+# Credentials & secrets
+*.pem
+*.key
+gcal_credentials.json
+*credentials*.json
+.env
+.env.*
+
+# Large binary/archive files
+*.tar.gz
+*.zip
+*.png
+*.jpg
+*.jpeg
+*.svg
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
