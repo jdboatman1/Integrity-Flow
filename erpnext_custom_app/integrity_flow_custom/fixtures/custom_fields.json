@@ -1,0 +1,169 @@
+[
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "fieldname": "custom_controller_brand",
+        "label": "Controller Brand",
+        "fieldtype": "Data",
+        "insert_after": "customer_details",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "fieldname": "custom_controller_model",
+        "label": "Controller Model",
+        "fieldtype": "Data",
+        "insert_after": "custom_controller_brand",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "fieldname": "custom_zone_count",
+        "label": "Zone Count",
+        "fieldtype": "Int",
+        "insert_after": "custom_controller_model",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "fieldname": "custom_backflow_type",
+        "label": "Backflow Preventer Type",
+        "fieldtype": "Select",
+        "options": "\nRPZ\nDCV\nPVB\nSVB",
+        "insert_after": "custom_zone_count",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "fieldname": "custom_tceq_license_number",
+        "label": "TCEQ License Number",
+        "fieldtype": "Data",
+        "insert_after": "custom_backflow_type",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "fieldname": "custom_property_size",
+        "label": "Property Size (sq ft)",
+        "fieldtype": "Int",
+        "insert_after": "custom_tceq_license_number",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Quotation",
+        "fieldname": "custom_scheduled_date",
+        "label": "Scheduled Date",
+        "fieldtype": "Date",
+        "insert_after": "transaction_date",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Quotation",
+        "fieldname": "custom_scheduled_time",
+        "label": "Scheduled Time",
+        "fieldtype": "Select",
+        "options": "\n9AM-11AM\n11AM-1PM\n1PM-3PM\n3PM-5PM",
+        "insert_after": "custom_scheduled_date",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Quotation",
+        "fieldname": "custom_technician",
+        "label": "Assigned Technician",
+        "fieldtype": "Link",
+        "options": "User",
+        "insert_after": "custom_scheduled_time",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Quotation",
+        "fieldname": "custom_gcal_event_id",
+        "label": "Google Calendar Event ID",
+        "fieldtype": "Data",
+        "hidden": 1,
+        "insert_after": "custom_technician",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Quotation",
+        "fieldname": "custom_service_description",
+        "label": "Service Description",
+        "fieldtype": "Small Text",
+        "insert_after": "custom_gcal_event_id",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Sales Invoice",
+        "fieldname": "custom_gcal_event_id",
+        "label": "Google Calendar Event ID",
+        "fieldtype": "Data",
+        "hidden": 1,
+        "insert_after": "posting_date",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Sales Invoice",
+        "fieldname": "exempt_from_sales_tax",
+        "label": "Exempt from Sales Tax",
+        "fieldtype": "Check",
+        "insert_after": "tax_category",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Lead",
+        "fieldname": "custom_address_line1",
+        "label": "Address Line 1",
+        "fieldtype": "Data",
+        "insert_after": "email_id",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Lead",
+        "fieldname": "custom_city",
+        "label": "City",
+        "fieldtype": "Data",
+        "insert_after": "custom_address_line1",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Lead",
+        "fieldname": "custom_state",
+        "label": "State",
+        "fieldtype": "Data",
+        "insert_after": "custom_city",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Lead",
+        "fieldname": "custom_zip",
+        "label": "ZIP Code",
+        "fieldtype": "Data",
+        "insert_after": "custom_state",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Lead",
+        "fieldname": "custom_service_description",
+        "label": "Service Description",
+        "fieldtype": "Small Text",
+        "insert_after": "custom_zip",
+        "module": "Integrity Flow Custom"
+    }
+]

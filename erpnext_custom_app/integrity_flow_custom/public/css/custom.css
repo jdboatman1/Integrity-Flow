@@ -1,0 +1,82 @@
+:root {
+  --boatman-primary-blue: #1b7abf;
+  --boatman-trust-green: #059669;
+  --boatman-action-orange: #ea580c;
+  --boatman-white: #ffffff;
+  --boatman-gray-100: #f4f7f9;
+  --boatman-gray-900: #1a202c;
+}
+
+/* Boatman Systems™ Branding */
+.navbar {
+  background: var(--boatman-primary-blue) !important;
+}
+
+.btn-primary {
+  background-color: var(--boatman-primary-blue) !important;
+  border-color: var(--boatman-primary-blue) !important;
+}
+
+.btn-primary:hover {
+  background-color: #156194 !important;
+  border-color: #156194 !important;
+}
+
+.indicator.orange {
+  background-color: var(--boatman-action-orange) !important;
+}
+
+.indicator.green {
+  background-color: var(--boatman-trust-green) !important;
+}
+
+/* Professional typography */
+h1, h2, h3, h4, h5, h6,
+.page-title,
+.form-section .section-head {
+  font-weight: 900 !important;
+  font-style: italic !important;
+  text-transform: uppercase !important;
+}
+
+/* Powered by Boatman Systems™ footer */
+.page-footer::after {
+  content: "Powered by Boatman Systems™";
+  display: block;
+  text-align: center;
+  color: var(--boatman-gray-900);
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #eee;
+}
+
+/* Clean up ERPNext junk */
+.btn-default.btn-xs.no-decoration {
+  display: none !important; /* Hide unnecessary buttons */
+}
+
+/* Modern card styling */
+.frappe-control,
+.form-section {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Status indicators */
+.indicator-pill.blue {
+  background-color: var(--boatman-primary-blue) !important;
+}
+
+/* Links */
+a {
+  color: var(--boatman-primary-blue) !important;
+}
+
+a:hover {
+  color: #156194 !important;
+}

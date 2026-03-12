@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include integrity_flow_custom *.css
+recursive-include integrity_flow_custom *.csv
+recursive-include integrity_flow_custom *.html
+recursive-include integrity_flow_custom *.ico
+recursive-include integrity_flow_custom *.js
+recursive-include integrity_flow_custom *.json
+recursive-include integrity_flow_custom *.md
+recursive-include integrity_flow_custom *.png
+recursive-include integrity_flow_custom *.py
+recursive-include integrity_flow_custom *.svg
+recursive-include integrity_flow_custom *.txt
+recursive-exclude integrity_flow_custom *.pyc
