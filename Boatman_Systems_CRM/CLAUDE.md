@@ -61,14 +61,16 @@ All QB items imported as non-stock, sales-only (`is_stock_item=0`, `is_sales_ite
 
 ## CRM Pipeline (never skip stages)
 
-`Lead` → `Quotation` (Estimate) → `Sales Order` → `Sales Invoice` → `Work Order`
+`Lead` → `Quotation` (Estimate) → `Sales Order` → `Sales Invoice`
 
 - Signed estimate auto-triggers Sales Order + Invoice creation
-- Work Order creation pushes to technician's Google Calendar
+- Sales Invoice creation pushes to technician's Google Calendar
+
+**Full pipeline spec** (custom fields, automation, open items): [`ERP-Pipeline.md`](./ERP-Pipeline.md)
 
 ## Core Doctypes
 
-`Lead`, `Opportunity`, `Quotation`, `Sales Order`, `Sales Invoice`, `Work Order`, `Communication`, `Customer`
+`Lead`, `Opportunity`, `Quotation`, `Sales Order`, `Sales Invoice`, `Communication`, `Customer`
 
 ## Custom Fields
 
@@ -81,7 +83,7 @@ All QB items imported as non-stock, sales-only (`is_stock_item=0`, `is_sales_ite
 
 | Role | Access |
 |---|---|
-| Technician | Mobile/Work Orders only — no financials |
+| Technician | Mobile/job view only — no financials |
 | Office Admin | Full pipeline |
 | Customer | Portal only (estimates, invoices, work history) |
 | Owner | Full access + reporting |

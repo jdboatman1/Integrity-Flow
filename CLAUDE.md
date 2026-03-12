@@ -52,8 +52,8 @@ Paste into Integrity Flow as a Server Script on `Communication` save. Uses the `
 2. Fall back to `Lead.mobile_no`
 3. If neither matches, flag as new caller for manual Lead creation
 
-### `scripts/gcal_work_order_sync.py` — Frappe Server Script
-Paste into Integrity Flow as a Server Script on `Work Order` `after_insert` and `on_update`. Uses a Google service account JSON at `/home/frappe/gcal_credentials.json` and mints OAuth2 tokens via `openssl` subprocess signing. Syncs to the calendar specified by `CALENDAR_ID`. Stores the created event ID in `custom_gcal_event_id` to enable updates instead of duplicates on subsequent saves.
+### `scripts/gcal_work_order_sync.py` — Frappe Server Script (retired)
+GCal sync now happens at the **Sales Invoice** stage, not Work Order. This script is kept for reference only.
 
 ### `Boatman_Systems_CRM/` — Documentation & Data Import
 Blueprint and guides for the Integrity Flow CRM configuration. See `Boatman_Systems_CRM/CLAUDE.md` for full details. Key import scripts in `Boatman_Systems_CRM/imports/`:
@@ -74,8 +74,13 @@ Use the `erp-data-importer` sub-agent (`.claude/agents/erp-data-importer.md`) fo
 
 Every user-facing surface must display **"Powered by Boatman Systems™"**.
 
+## ERP Pipeline Reference
+
+Full pipeline spec with custom fields, automation, roles, and open items:
+👉 [`Boatman_Systems_CRM/ERP-Pipeline.md`](./Boatman_Systems_CRM/ERP-Pipeline.md)
+
 ## Key Open Items
 - **Lead form backend:** Wire the `#lead-form` POST to `POST /api/lead` on the AI proxy (already implemented in `ai_proxy.py`) to create Leads automatically
 - **3CX script deployment:** The script in `scripts/3cx_call_logging.py` needs to be entered into Integrity Flow as a Server Script
-- **GCal sync deployment:** `scripts/gcal_work_order_sync.py` needs to be entered into Integrity Flow as a Server Script (two entries: `after_insert` and `on_update`); requires `custom_gcal_event_id` custom field on Work Order
+- **GCal sync deployment:** Wire GCal sync to `Sales Invoice` `after_insert` / `on_update` instead of Work Order
 - **Synology backup pipeline:** Linode B → Synology NAS via Tailscale (not yet configured)
