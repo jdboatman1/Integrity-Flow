@@ -1,0 +1,383 @@
+/* Login Page Styles */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1b7abf 0%, #059669 100%);
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-card {
+  background: white;
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.login-header h1 {
+  color: var(--primary-blue);
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--gray-600);
+  font-size: 18px;
+  margin-bottom: 40px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.success-message {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.success-message .icon {
+  width: 60px;
+  height: 60px;
+  color: var(--trust-green);
+  margin: 0 auto 20px;
+}
+
+.success-message h3 {
+  color: var(--trust-green);
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.success-message p {
+  color: var(--gray-600);
+  font-size: 16px;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border: 1px solid #fcc;
+}
+
+/* Loading Page */
+.loading-page,
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--gray-100);
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--gray-200);
+  border-top-color: var(--primary-blue);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-page p {
+  margin-top: 20px;
+  color: var(--gray-600);
+}
+
+.error-card {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+
+.error-card h2 {
+  color: #c33;
+  margin-bottom: 20px;
+}
+
+.error-card p {
+  color: var(--gray-600);
+  margin-bottom: 30px;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  min-height: 100vh;
+  background: var(--gray-100);
+}
+
+.dashboard-header {
+  background: var(--primary-blue);
+  color: white;
+  padding: 30px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  color: white;
+  font-size: 28px;
+}
+
+.dashboard-container {
+  padding: 40px 20px;
+}
+
+.welcome-section {
+  margin-bottom: 40px;
+}
+
+.welcome-section h2 {
+  color: var(--gray-900);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.customer-email {
+  color: var(--gray-600);
+  font-size: 16px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--gray-200);
+  overflow-x: auto;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-600);
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  color: var(--primary-blue);
+}
+
+.tab.active {
+  color: var(--primary-blue);
+  border-bottom-color: var(--primary-blue);
+}
+
+/* Overview Grid */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--gray-200);
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  font-size: 48px;
+  color: var(--primary-blue);
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  color: var(--gray-600);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Quotes and Invoices Lists */
+.quotes-list,
+.invoices-list {
+  display: grid;
+  gap: 20px;
+}
+
+.quote-card,
+.invoice-card {
+  transition: transform 0.3s;
+}
+
+.quote-card:hover,
+.invoice-card:hover {
+  transform: translateY(-3px);
+}
+
+.quote-header,
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.quote-header h3,
+.invoice-header h3 {
+  font-size: 20px;
+  color: var(--gray-900);
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status-draft {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-submitted,
+.status-open {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-paid {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-overdue {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.quote-details,
+.invoice-details {
+  display: grid;
+  gap: 10px;
+}
+
+.quote-details p,
+.invoice-details p {
+  color: var(--gray-600);
+  font-size: 15px;
+}
+
+.quote-details strong,
+.invoice-details strong {
+  color: var(--gray-900);
+  font-weight: 700;
+}
+
+/* Schedule Form */
+.schedule-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.schedule-form h2 {
+  margin-bottom: 30px;
+  color: var(--gray-900);
+  font-size: 28px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+textarea.input-field {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--gray-600);
+}
+
+.empty-state p {
+  font-size: 18px;
+}
+
+/* Footer */
+.dashboard-footer {
+  background: white;
+  padding: 30px 0;
+  margin-top: 60px;
+  border-top: 1px solid var(--gray-200);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 40px 30px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
