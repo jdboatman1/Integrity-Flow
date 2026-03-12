@@ -147,3 +147,4 @@ print(f"  with city:     {has_city}")
 print(f"Skipped (failed):{len(failed_rows)}")
 print(f"Output:          {OUTPUT}")
 print(f"Failed log:      {FAILED}")
+\n    email_id: email, \n    custom_address: get(row, COL_STREET1) +   + get(row, COL_STREET2),

@@ -1,0 +1,283 @@
+.ts-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 15px;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.ts-header {
+	text-align: center;
+	padding: 10px 0 15px;
+}
+
+.ts-view-label {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #1b7abf;
+	font-weight: 700;
+	margin-bottom: 2px;
+}
+
+.ts-current-date {
+	display: block;
+	font-size: 22px;
+	font-weight: 900;
+	color: #1e293b;
+}
+
+/* Grid table */
+.ts-grid {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+
+.ts-grid thead th {
+	background: #1b7abf;
+	color: #fff;
+	padding: 12px 10px;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	text-align: center;
+	border-bottom: 2px solid #15649e;
+}
+
+.ts-grid thead th:first-child {
+	text-align: left;
+	padding-left: 16px;
+}
+
+.ts-time-col {
+	width: 120px;
+	min-width: 120px;
+}
+
+.ts-tech-col {
+	min-width: 160px;
+}
+
+.ts-time-cell {
+	background: #f8fafc;
+	font-weight: 700;
+	font-size: 12px;
+	color: #475569;
+	padding: 12px 16px;
+	border-right: 1px solid #e2e8f0;
+	border-bottom: 1px solid #e2e8f0;
+	white-space: nowrap;
+}
+
+.ts-time-cell.ts-today {
+	background: #eff6ff;
+	color: #1b7abf;
+	font-weight: 900;
+}
+
+.ts-today-row {
+	background: #f0f9ff;
+}
+
+.ts-cell {
+	padding: 8px;
+	border-right: 1px solid #e2e8f0;
+	border-bottom: 1px solid #e2e8f0;
+	vertical-align: top;
+	min-height: 70px;
+}
+
+.ts-cell:last-child {
+	border-right: none;
+}
+
+.ts-cell-available {
+	background: #d1fae5;
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	transition: background 0.15s;
+}
+
+.ts-cell-available:hover {
+	background: #a7f3d0;
+}
+
+.ts-book-label {
+	font-size: 13px;
+	font-weight: 600;
+	color: #059669;
+}
+
+.ts-cell-booked {
+	background: #fff;
+}
+
+.ts-cell-week-booked {
+	background: #fff;
+	cursor: pointer;
+	transition: background 0.15s;
+}
+
+.ts-cell-week-booked:hover {
+	background: #f8fafc;
+}
+
+/* Booking cards */
+.ts-booking-card {
+	display: block;
+	padding: 8px 10px;
+	border-radius: 6px;
+	margin-bottom: 6px;
+	text-decoration: none;
+	transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.ts-booking-card:last-child {
+	margin-bottom: 0;
+}
+
+.ts-booking-card:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+	text-decoration: none;
+}
+
+.ts-booking-customer {
+	font-weight: 700;
+	font-size: 13px;
+	margin-bottom: 2px;
+}
+
+.ts-booking-detail {
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+	opacity: 0.85;
+}
+
+.ts-booking-addr {
+	font-size: 11px;
+	opacity: 0.7;
+	margin-top: 2px;
+}
+
+.ts-booking-id {
+	font-size: 10px;
+	opacity: 0.5;
+	margin-top: 3px;
+	font-family: monospace;
+}
+
+/* Week view items */
+.ts-week-count {
+	display: block;
+	font-size: 12px;
+	font-weight: 700;
+	color: #1b7abf;
+	margin-bottom: 6px;
+}
+
+.ts-week-item {
+	padding: 4px 8px;
+	margin-bottom: 3px;
+	border-radius: 4px;
+	font-size: 12px;
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/* Unassigned section */
+.ts-unassigned-section {
+	margin-top: 20px;
+	border: 2px solid #f59e0b;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #fffbeb;
+}
+
+.ts-unassigned-header {
+	background: #fef3c7;
+	padding: 10px 16px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #92400e;
+	border-bottom: 1px solid #fde68a;
+}
+
+.ts-unassigned-list {
+	padding: 8px;
+}
+
+.ts-unassigned-item {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 8px 12px;
+	background: #fff;
+	border-radius: 6px;
+	margin-bottom: 4px;
+	text-decoration: none;
+	color: #1e293b;
+	border: 1px solid #fde68a;
+	transition: background 0.15s;
+}
+
+.ts-unassigned-item:hover {
+	background: #fef9c3;
+	text-decoration: none;
+	color: #1e293b;
+}
+
+.ts-ua-name {
+	font-weight: 700;
+	font-size: 13px;
+	flex: 1;
+}
+
+.ts-ua-date, .ts-ua-slot {
+	font-size: 12px;
+	color: #64748b;
+}
+
+.ts-ua-id {
+	font-size: 11px;
+	font-family: monospace;
+	color: #94a3b8;
+}
+
+/* Footer */
+.ts-footer {
+	text-align: center;
+	padding: 20px 0 10px;
+	font-size: 11px;
+	color: #94a3b8;
+	letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.ts-grid {
+		font-size: 12px;
+	}
+	.ts-tech-col {
+		min-width: 120px;
+	}
+	.ts-time-col {
+		width: 80px;
+		min-width: 80px;
+	}
+	.ts-booking-card {
+		padding: 6px 8px;
+	}
+}

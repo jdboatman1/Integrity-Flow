@@ -2,9 +2,9 @@
 """
 Boatman AI™ Proxy — Integrity Flow Powered by Boatman Systems™
 Handles:
-  POST /api/ai/chat   → Ollama Docker container on Linode B (port 11435)
+  POST /api/ai/chat   → Ollama (native) on Linode A (port 11434)
   POST /api/lead      → ERPNext Lead creation (erp.aaairrigationservice.com)
-Runs on Linode B at 0.0.0.0:11436. NPM proxies the public endpoints here.
+Runs on Linode A at 0.0.0.0:11436. NPM proxies /api/ai/chat here.
 """
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
@@ -12,8 +12,8 @@ import json
 import urllib.request
 import urllib.error
 
-OLLAMA_URL  = "http://127.0.0.1:11435/api/chat"
-MODEL       = "qwen2.5-coder:1.5b"
+OLLAMA_URL  = "http://127.0.0.1:11434/api/chat"
+MODEL       = "tinyllama:latest"
 PORT        = 11436
 
 ERP_URL     = "http://127.0.0.1:8080"

@@ -1,0 +1,1 @@
+import frappe; from frappe.custom.doctype.custom_field.custom_field import create_custom_field; create_custom_field(doctype=\"Customer\", fieldname=\"email_id\", label=\"Email Address\", fieldtype=\"Data\", insert_after=\"customer_name\"); create_custom_field(doctype=\"Customer\", fieldname=\"custom_address\", label=\"Address\", fieldtype=\"Text\", insert_after=\"email_id\");
