@@ -107,9 +107,9 @@
         "fieldname": "custom_billing_address",
         "label": "Billing Address",
         "fieldtype": "Small Text",
-        "depends_on": "eval:doc.custom_billing_is_different",
         "insert_after": "party_name",
-        "module": "Integrity Flow Custom"
+        "module": "Integrity Flow Custom",
+        "description": "Customer billing address"
     },
     {
         "doctype": "Custom Field",
@@ -119,17 +119,19 @@
         "label": "Service Address",
         "fieldtype": "Small Text",
         "insert_after": "custom_billing_address",
-        "module": "Integrity Flow Custom"
+        "module": "Integrity Flow Custom",
+        "description": "Physical location where service will be performed"
     },
     {
         "doctype": "Custom Field",
-        "name": "Quotation-custom_billing_is_different",
+        "name": "Quotation-custom_billing_different",
         "dt": "Quotation",
-        "fieldname": "custom_billing_is_different",
-        "label": "Billing is Different",
+        "fieldname": "custom_billing_different",
+        "label": "Billing Address is Different",
         "fieldtype": "Check",
         "insert_after": "custom_service_address",
-        "module": "Integrity Flow Custom"
+        "module": "Integrity Flow Custom",
+        "default": "0"
     },
     {
         "doctype": "Custom Field",

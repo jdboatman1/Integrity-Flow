@@ -23,6 +23,7 @@ doc_events = {
     },
     "Quotation": {
         "after_insert": "integrity_flow_custom.events.quotation.on_quotation_insert",
+        "validate": "integrity_flow_custom.events.quotation.on_quotation_validate",
         "before_save": "integrity_flow_custom.events.quotation.send_schedule_portal_invite",
         "on_update": "integrity_flow_custom.events.quotation.sync_to_gcal",
         "on_submit": "integrity_flow_custom.events.quotation_approval.on_quotation_update"
