@@ -57,6 +57,36 @@
     {
         "doctype": "Custom Field",
         "dt": "Quotation",
+        "fieldname": "custom_billing_address",
+        "label": "Billing Address",
+        "fieldtype": "Small Text",
+        "insert_after": "party_name",
+        "module": "Integrity Flow Custom",
+        "description": "Customer billing address"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Quotation",
+        "fieldname": "custom_service_address",
+        "label": "Service Address",
+        "fieldtype": "Small Text",
+        "insert_after": "custom_billing_address",
+        "module": "Integrity Flow Custom",
+        "description": "Physical location where service will be performed"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Quotation",
+        "fieldname": "custom_billing_different",
+        "label": "Billing Address is Different",
+        "fieldtype": "Check",
+        "insert_after": "custom_service_address",
+        "module": "Integrity Flow Custom",
+        "default": "0"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Quotation",
         "fieldname": "custom_scheduled_date",
         "label": "Scheduled Date",
         "fieldtype": "Date",
