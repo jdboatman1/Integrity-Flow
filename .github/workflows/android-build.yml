@@ -1,0 +1,42 @@
+name: Android Build
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'mobile/**'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        working-directory: mobile
+        run: npm install
+
+      - name: Build Android Release
+        working-directory: mobile/android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: integrity-flow-android-apk
+          path: mobile/android/app/build/outputs/apk/release/app-release.apk
