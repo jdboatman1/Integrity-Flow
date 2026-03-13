@@ -1,6 +1,7 @@
 [
     {
         "doctype": "Custom Field",
+        "name": "Customer-custom_controller_brand",
         "dt": "Customer",
         "fieldname": "custom_controller_brand",
         "label": "Controller Brand",
@@ -10,6 +11,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Customer-custom_controller_model",
         "dt": "Customer",
         "fieldname": "custom_controller_model",
         "label": "Controller Model",
@@ -19,6 +21,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Customer-custom_zone_count",
         "dt": "Customer",
         "fieldname": "custom_zone_count",
         "label": "Zone Count",
@@ -28,6 +31,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Customer-custom_backflow_type",
         "dt": "Customer",
         "fieldname": "custom_backflow_type",
         "label": "Backflow Preventer Type",
@@ -38,6 +42,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Customer-custom_tceq_license_number",
         "dt": "Customer",
         "fieldname": "custom_tceq_license_number",
         "label": "TCEQ License Number",
@@ -47,6 +52,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Customer-custom_property_size",
         "dt": "Customer",
         "fieldname": "custom_property_size",
         "label": "Property Size (sq ft)",
@@ -56,6 +62,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Quotation-custom_scheduled_date",
         "dt": "Quotation",
         "fieldname": "custom_scheduled_date",
         "label": "Scheduled Date",
@@ -65,6 +72,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Quotation-custom_scheduled_time",
         "dt": "Quotation",
         "fieldname": "custom_scheduled_time",
         "label": "Scheduled Time",
@@ -75,6 +83,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Quotation-custom_technician",
         "dt": "Quotation",
         "fieldname": "custom_technician",
         "label": "Assigned Technician",
@@ -85,6 +94,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Quotation-custom_gcal_event_id",
         "dt": "Quotation",
         "fieldname": "custom_gcal_event_id",
         "label": "Google Calendar Event ID",
@@ -95,6 +105,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Quotation-custom_service_description",
         "dt": "Quotation",
         "fieldname": "custom_service_description",
         "label": "Service Description",
@@ -104,6 +115,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Sales Invoice-custom_gcal_event_id",
         "dt": "Sales Invoice",
         "fieldname": "custom_gcal_event_id",
         "label": "Google Calendar Event ID",
@@ -114,6 +126,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Sales Invoice-exempt_from_sales_tax",
         "dt": "Sales Invoice",
         "fieldname": "exempt_from_sales_tax",
         "label": "Exempt from Sales Tax",
@@ -123,6 +136,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Lead-custom_address_line1",
         "dt": "Lead",
         "fieldname": "custom_address_line1",
         "label": "Address Line 1",
@@ -132,6 +146,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Lead-custom_city",
         "dt": "Lead",
         "fieldname": "custom_city",
         "label": "City",
@@ -141,6 +156,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Lead-custom_state",
         "dt": "Lead",
         "fieldname": "custom_state",
         "label": "State",
@@ -150,6 +166,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Lead-custom_zip",
         "dt": "Lead",
         "fieldname": "custom_zip",
         "label": "ZIP Code",
@@ -159,6 +176,7 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Lead-custom_service_description",
         "dt": "Lead",
         "fieldname": "custom_service_description",
         "label": "Service Description",
