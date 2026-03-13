@@ -21,6 +21,9 @@ doc_events = {
     "Customer": {
         "after_insert": "integrity_flow_custom.events.customer.send_portal_invite"
     },
+    "Lead": {
+        "before_save": "integrity_flow_custom.events.lead.before_save"
+    },
     "Quotation": {
         "before_insert": "integrity_flow_custom.events.quotation.before_insert",
         "before_save": "integrity_flow_custom.events.quotation.before_save",

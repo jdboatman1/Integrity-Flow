@@ -30,7 +30,7 @@ def before_save(doc, method):
 
 def populate_addresses(doc):
     """
-    Populate billing and service addresses from address_display
+    Populate billing and service addresses from address_display or Lead
     """
     # Skip if already populated
     if doc.get("custom_service_address"):
@@ -42,37 +42,27 @@ def populate_addresses(doc):
     if doc.get("address_display"):
         # Use the address_display field if available
         address = doc.address_display
-    elif doc.get("customer_address"):
-        # Get address from customer_address link
-        try:
-            addr_doc = frappe.get_doc("Address", doc.customer_address)
-            address_parts = []
-            if addr_doc.address_line1:
-                address_parts.append(addr_doc.address_line1)
-            if addr_doc.city:
-                address_parts.append(addr_doc.city)
-            if addr_doc.state:
-                address_parts.append(addr_doc.state)
-            if addr_doc.pincode:
-                address_parts.append(addr_doc.pincode)
-            address = ", ".join([p for p in address_parts if p])
-        except:
-            pass
     elif doc.quotation_to == "Lead" and doc.party_name:
-        # Get from Lead custom fields
+        # Get from STANDARD Lead fields (not custom)
         try:
             lead = frappe.get_doc("Lead", doc.party_name)
             address_parts = []
-            if lead.get("custom_address_line1"):
-                address_parts.append(lead.custom_address_line1)
-            if lead.get("custom_city"):
-                address_parts.append(lead.custom_city)
-            if lead.get("custom_state"):
-                address_parts.append(lead.custom_state)
-            if lead.get("custom_zip"):
-                address_parts.append(lead.custom_zip)
+            
+            # Standard ERPNext Lead fields
+            if lead.get("address_line1"):
+                address_parts.append(lead.address_line1)
+            if lead.get("address_line2"):
+                address_parts.append(lead.address_line2)
+            if lead.get("city"):
+                address_parts.append(lead.city)
+            if lead.get("state"):
+                address_parts.append(lead.state)
+            if lead.get("pincode"):
+                address_parts.append(lead.pincode)
+            
             address = ", ".join([p for p in address_parts if p])
-        except:
+        except Exception as e:
+            frappe.log_error(f"Failed to get Lead address: {str(e)}", "Address Population")
             pass
     elif doc.quotation_to == "Customer" and doc.party_name:
         # Get primary address for Customer
