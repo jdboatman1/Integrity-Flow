@@ -22,10 +22,9 @@ doc_events = {
         "after_insert": "integrity_flow_custom.events.customer.send_portal_invite"
     },
     "Quotation": {
-        "after_insert": "integrity_flow_custom.events.quotation.on_quotation_insert",
-        "validate": "integrity_flow_custom.events.quotation.on_quotation_validate",
-        "before_save": "integrity_flow_custom.events.quotation.send_schedule_portal_invite",
-        "on_update": "integrity_flow_custom.events.quotation.sync_to_gcal",
+        "before_insert": "integrity_flow_custom.events.quotation.before_insert",
+        "before_save": "integrity_flow_custom.events.quotation.before_save",
+        "after_insert": "integrity_flow_custom.events.quotation.send_portal_invite",
         "on_submit": "integrity_flow_custom.events.quotation_approval.on_quotation_update"
     },
     "Sales Invoice": {
