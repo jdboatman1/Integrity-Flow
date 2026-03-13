@@ -1,0 +1,20 @@
+[
+    {
+        "doctype": "Property Setter",
+        "doctype_or_field": "DocField",
+        "doc_type": "Lead",
+        "field_name": "job_title",
+        "property": "hidden",
+        "value": "1",
+        "property_type": "Check"
+    },
+    {
+        "doctype": "Property Setter",
+        "doctype_or_field": "DocField",
+        "doc_type": "Lead",
+        "field_name": "job_title",
+        "property": "read_only",
+        "value": "0",
+        "property_type": "Check"
+    }
+]
