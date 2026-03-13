@@ -1,46 +1,6 @@
 [
     {
         "doctype": "Custom Field",
-        "name": "Customer-custom_address_line1",
-        "dt": "Customer",
-        "fieldname": "custom_address_line1",
-        "label": "Address Line 1",
-        "fieldtype": "Data",
-        "insert_after": "customer_details",
-        "module": "Integrity Flow Custom"
-    },
-    {
-        "doctype": "Custom Field",
-        "name": "Customer-custom_city",
-        "dt": "Customer",
-        "fieldname": "custom_city",
-        "label": "City",
-        "fieldtype": "Data",
-        "insert_after": "custom_address_line1",
-        "module": "Integrity Flow Custom"
-    },
-    {
-        "doctype": "Custom Field",
-        "name": "Customer-custom_state",
-        "dt": "Customer",
-        "fieldname": "custom_state",
-        "label": "State",
-        "fieldtype": "Data",
-        "insert_after": "custom_city",
-        "module": "Integrity Flow Custom"
-    },
-    {
-        "doctype": "Custom Field",
-        "name": "Customer-custom_zip",
-        "dt": "Customer",
-        "fieldname": "custom_zip",
-        "label": "ZIP Code",
-        "fieldtype": "Data",
-        "insert_after": "custom_state",
-        "module": "Integrity Flow Custom"
-    },
-    {
-        "doctype": "Custom Field",
         "name": "Customer-custom_controller_brand",
         "dt": "Customer",
         "fieldname": "custom_controller_brand",
