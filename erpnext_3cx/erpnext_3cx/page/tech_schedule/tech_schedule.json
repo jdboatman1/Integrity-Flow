@@ -1,0 +1,10 @@
+{
+ "doctype": "Page",
+ "icon": "fa fa-calendar",
+ "module": "Selling",
+ "name": "tech-schedule",
+ "page_name": "tech-schedule",
+ "standard": "Yes",
+ "title": "Tech Schedule",
+ "roles": [{"role": "System Manager"},{"role": "Sales Manager"},{"role": "Sales User"}]
+}

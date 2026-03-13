@@ -1,0 +1,12 @@
+{
+  "general": {
+    "preferredEditor": "vim"
+  },
+  "agents": {
+    "overrides": {
+      "browser_agent": {
+        "enabled": true
+      }
+    }
+  }
+}
