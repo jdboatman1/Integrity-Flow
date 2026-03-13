@@ -13,6 +13,36 @@ CREDS_PATH = "/home/frappe/gcal_credentials.json"
 CALENDAR_ID = "svkl6l87fddpvfubg96g3iklg8@group.calendar.google.com"
 SCOPES = "https://www.googleapis.com/auth/calendar"
 
+def on_quotation_insert(doc, method):
+    """
+    Auto-populate customer address and setup for approval workflow
+    """
+    # Auto-populate customer address
+    if doc.party_name and not doc.customer_address:
+        try:
+            # Get primary address for customer
+            address = frappe.get_all(
+                "Dynamic Link",
+                filters={
+                    "link_doctype": "Customer",
+                    "link_name": doc.party_name,
+                    "parenttype": "Address"
+                },
+                fields=["parent"],
+                limit=1
+            )
+            
+            if address:
+                doc.customer_address = address[0].parent
+                
+                # Also set address display
+                addr_doc = frappe.get_doc("Address", address[0].parent)
+                doc.address_display = f"{addr_doc.address_line1}\\n{addr_doc.city}, {addr_doc.state} {addr_doc.pincode}"
+                
+                frappe.msgprint(f"✅ Address auto-populated from customer record")
+        except Exception as e:
+            frappe.log_error(f"Failed to auto-populate address: {str(e)}", "Address Auto-populate")
+
 def send_schedule_portal_invite(doc, method):
     """
     Send portal invite when customer schedules appointment
