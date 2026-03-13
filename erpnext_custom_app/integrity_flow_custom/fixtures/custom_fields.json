@@ -1,6 +1,46 @@
 [
     {
         "doctype": "Custom Field",
+        "name": "Customer-custom_address_line1",
+        "dt": "Customer",
+        "fieldname": "custom_address_line1",
+        "label": "Address Line 1",
+        "fieldtype": "Data",
+        "insert_after": "customer_details",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Customer-custom_city",
+        "dt": "Customer",
+        "fieldname": "custom_city",
+        "label": "City",
+        "fieldtype": "Data",
+        "insert_after": "custom_address_line1",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Customer-custom_state",
+        "dt": "Customer",
+        "fieldname": "custom_state",
+        "label": "State",
+        "fieldtype": "Data",
+        "insert_after": "custom_city",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Customer-custom_zip",
+        "dt": "Customer",
+        "fieldname": "custom_zip",
+        "label": "ZIP Code",
+        "fieldtype": "Data",
+        "insert_after": "custom_state",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
         "name": "Customer-custom_controller_brand",
         "dt": "Customer",
         "fieldname": "custom_controller_brand",
@@ -58,6 +98,37 @@
         "label": "Property Size (sq ft)",
         "fieldtype": "Int",
         "insert_after": "custom_tceq_license_number",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Quotation-custom_service_address",
+        "dt": "Quotation",
+        "fieldname": "custom_service_address",
+        "label": "Service Address",
+        "fieldtype": "Small Text",
+        "insert_after": "party_name",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Quotation-custom_billing_is_different",
+        "dt": "Quotation",
+        "fieldname": "custom_billing_is_different",
+        "label": "Billing is Different",
+        "fieldtype": "Check",
+        "insert_after": "custom_service_address",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Quotation-custom_billing_address",
+        "dt": "Quotation",
+        "fieldname": "custom_billing_address",
+        "label": "Billing Address",
+        "fieldtype": "Small Text",
+        "depends_on": "eval:doc.custom_billing_is_different",
+        "insert_after": "custom_billing_is_different",
         "module": "Integrity Flow Custom"
     },
     {

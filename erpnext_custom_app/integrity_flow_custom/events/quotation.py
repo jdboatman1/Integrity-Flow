@@ -15,33 +15,58 @@ SCOPES = "https://www.googleapis.com/auth/calendar"
 
 def on_quotation_insert(doc, method):
     """
-    Auto-populate customer address and setup for approval workflow
+    Auto-populate customer address and default line items
     """
+    # Default order type to Service
+    if not doc.order_type:
+        doc.order_type = "Service"
+
     # Auto-populate customer address - only for Customers
-    if doc.quotation_to == "Customer" and doc.party_name and not doc.customer_address:
+    city = ""
+    if doc.quotation_to == "Customer" and doc.party_name:
         try:
-            # Get primary address for customer
-            address = frappe.get_all(
-                "Dynamic Link",
-                filters={
-                    "link_doctype": "Customer",
-                    "link_name": doc.party_name,
-                    "parenttype": "Address"
-                },
-                fields=["parent"],
-                limit=1
-            )
+            cust_doc = frappe.get_doc("Customer", doc.party_name)
+            city = cust_doc.custom_city or ""
             
-            if address:
-                doc.customer_address = address[0].parent
+            if not doc.customer_address:
+                # Get primary address for customer
+                address = frappe.get_all(
+                    "Dynamic Link",
+                    filters={
+                        "link_doctype": "Customer",
+                        "link_name": doc.party_name,
+                        "parenttype": "Address"
+                    },
+                    fields=["parent"],
+                    limit=1
+                )
                 
-                # Also set address display
-                addr_doc = frappe.get_doc("Address", address[0].parent)
-                doc.address_display = f"{addr_doc.address_line1}\\n{addr_doc.city}, {addr_doc.state} {addr_doc.pincode}"
-                
-                frappe.msgprint(f"✅ Address auto-populated from customer record")
+                if address:
+                    doc.customer_address = address[0].parent
+                    addr_doc = frappe.get_doc("Address", address[0].parent)
+                    doc.address_display = f"{addr_doc.address_line1}\\n{addr_doc.city}, {addr_doc.state} {addr_doc.pincode}"
         except Exception as e:
             frappe.log_error(f"Failed to auto-populate address: {str(e)}", "Address Auto-populate")
+    
+    elif doc.quotation_to == "Lead" and doc.party_name:
+        try:
+            lead_doc = frappe.get_doc("Lead", doc.party_name)
+            city = lead_doc.custom_city or ""
+        except:
+            pass
+
+    # Add default line item if empty
+    if not doc.items:
+        item_name = "Frisco Inspection" if city.lower() == "frisco" else "System Check"
+        rate = 125 if city.lower() == "frisco" else 95
+        
+        doc.append("items", {
+            "item_code": item_name,
+            "qty": 1,
+            "rate": rate,
+            "description": item_name
+        })
+        frappe.msgprint(f"✅ Added {item_name} line item at ${rate}")
 
 def send_schedule_portal_invite(doc, method):
     """
