@@ -17,8 +17,8 @@ def on_quotation_insert(doc, method):
     """
     Auto-populate customer address and setup for approval workflow
     """
-    # Auto-populate customer address
-    if doc.party_name and not doc.customer_address:
+    # Auto-populate customer address - only for Customers
+    if doc.quotation_to == "Customer" and doc.party_name and not doc.customer_address:
         try:
             # Get primary address for customer
             address = frappe.get_all(
@@ -47,12 +47,18 @@ def send_schedule_portal_invite(doc, method):
     """
     Send portal invite when customer schedules appointment
     """
+    # Only for Customers
+    if doc.quotation_to != "Customer":
+        return
+
     # Only send if this is a new quotation with scheduling info
     if not doc.get("custom_scheduled_date"):
         return
     
     # Get customer
     try:
+        if not frappe.db.exists("Customer", doc.party_name):
+            return
         customer = frappe.get_doc("Customer", doc.party_name)
     except:
         return
@@ -218,11 +224,20 @@ def _sync_quotation_to_gcal(doc):
     
     # Get customer phone
     phone = ""
-    try:
-        cust_doc = frappe.get_doc("Customer", customer)
-        phone = cust_doc.mobile_no or cust_doc.phone or ""
-    except:
-        pass
+    if doc.quotation_to == "Customer":
+        try:
+            if frappe.db.exists("Customer", customer):
+                cust_doc = frappe.get_doc("Customer", customer)
+                phone = cust_doc.mobile_no or cust_doc.phone or ""
+        except:
+            pass
+    elif doc.quotation_to == "Lead":
+        try:
+            if frappe.db.exists("Lead", customer):
+                lead_doc = frappe.get_doc("Lead", customer)
+                phone = lead_doc.mobile_no or lead_doc.phone_ext or ""
+        except:
+            pass
 
     # Get address
     address = ""
