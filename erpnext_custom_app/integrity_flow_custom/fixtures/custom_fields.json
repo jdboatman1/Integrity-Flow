@@ -115,6 +115,50 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Quotation-custom_signature_captured",
+        "dt": "Quotation",
+        "fieldname": "custom_signature_captured",
+        "label": "Signature Captured",
+        "fieldtype": "Check",
+        "insert_after": "custom_service_description",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Quotation-custom_signature_image",
+        "dt": "Quotation",
+        "fieldname": "custom_signature_image",
+        "label": "Signature Image",
+        "fieldtype": "Attach Image",
+        "insert_after": "custom_signature_captured",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Quotation-custom_sales_order",
+        "dt": "Quotation",
+        "fieldname": "custom_sales_order",
+        "label": "Auto-Generated Sales Order",
+        "fieldtype": "Link",
+        "options": "Sales Order",
+        "read_only": 1,
+        "insert_after": "custom_signature_image",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
+        "name": "Quotation-custom_sales_invoice",
+        "dt": "Quotation",
+        "fieldname": "custom_sales_invoice",
+        "label": "Auto-Generated Invoice",
+        "fieldtype": "Link",
+        "options": "Sales Invoice",
+        "read_only": 1,
+        "insert_after": "custom_sales_order",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
         "name": "Sales Invoice-custom_gcal_event_id",
         "dt": "Sales Invoice",
         "fieldname": "custom_gcal_event_id",
