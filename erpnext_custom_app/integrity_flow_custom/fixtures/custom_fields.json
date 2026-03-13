@@ -102,12 +102,23 @@
     },
     {
         "doctype": "Custom Field",
+        "name": "Quotation-custom_billing_address",
+        "dt": "Quotation",
+        "fieldname": "custom_billing_address",
+        "label": "Billing Address",
+        "fieldtype": "Small Text",
+        "depends_on": "eval:doc.custom_billing_is_different",
+        "insert_after": "party_name",
+        "module": "Integrity Flow Custom"
+    },
+    {
+        "doctype": "Custom Field",
         "name": "Quotation-custom_service_address",
         "dt": "Quotation",
         "fieldname": "custom_service_address",
         "label": "Service Address",
         "fieldtype": "Small Text",
-        "insert_after": "party_name",
+        "insert_after": "custom_billing_address",
         "module": "Integrity Flow Custom"
     },
     {
@@ -118,17 +129,6 @@
         "label": "Billing is Different",
         "fieldtype": "Check",
         "insert_after": "custom_service_address",
-        "module": "Integrity Flow Custom"
-    },
-    {
-        "doctype": "Custom Field",
-        "name": "Quotation-custom_billing_address",
-        "dt": "Quotation",
-        "fieldname": "custom_billing_address",
-        "label": "Billing Address",
-        "fieldtype": "Small Text",
-        "depends_on": "eval:doc.custom_billing_is_different",
-        "insert_after": "custom_billing_is_different",
         "module": "Integrity Flow Custom"
     },
     {
